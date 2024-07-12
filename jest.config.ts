@@ -5,6 +5,9 @@ const config: Config.InitialOptions = {
 	testEnvironment: "node",
 	testMatch: ["<rootDir>/tests/**/*.test.ts"],
 	// Other Jest configuration options can be added here
+	transform: {
+		"^.+\\.tsx?$": "ts-jest",
+	},
 };
 
 export default config;
